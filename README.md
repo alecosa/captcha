@@ -2,7 +2,37 @@
 Generador de captcha alfanumérico en PHP.
 
 # uso
-Importe este simple script en el formulario que desea insertar el captcha, luego valide que los campos $captcha_random y $captcha_digitado sean iguales.
+Importe este simple script en el formulario que desea insertar el captcha.
+
+
+Ejemplo:
+
+```php
+<?PHP
+echo("
+<!DOCUMENT TYPE='es'>
+<html lang='es'>
+    <head>
+        <title>Captcha</title>
+    </head>
+    <body>
+        <form method='POST' action='validar.php'>
+        <table border=0 width='100%'>
+        <tr>
+        ");
+        include('captcha.php');
+        echo("
+        <tr>
+        <td><button>Validar</button>
+        </table>
+        </form>
+    </body>
+</html>
+");
+?>
+```
+
+Posteriormente valide que los campos $captcha_random y $captcha_digitado sean iguales.
 
 Ejemplo:
 
