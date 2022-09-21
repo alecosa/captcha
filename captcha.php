@@ -1,11 +1,8 @@
 <?PHP
 /*
-copyright © 2022 parablan - Hector Alejandro Parada Blanco
-
 Powered by parablan
-
+Hector Alejandro Parada Blanco
 Captcha alfanumerico de 6 dígitos
-
 */
 
 // Generar captcha
