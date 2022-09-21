@@ -2,7 +2,7 @@
 /*
 Powered by parablan
 Hector Alejandro Parada Blanco
-Captcha alfanumerico de 6 dígitos
+Captcha alfanumérico de 6 dígitos
 */
 
 // Generar captcha
