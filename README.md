@@ -2,7 +2,7 @@
 Generador de captcha alfanumérico en PHP.
 
 # uso
-Importe el script captcha.php en el formulario que desea insertar el captcha.
+Importe el script [captcha.php](https://github.com/alecosa/captcha/blob/main/captcha.php) en el formulario que desea insertar el captcha.
 
 
 Ejemplo:
