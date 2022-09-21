@@ -32,7 +32,7 @@ echo("
 ?>
 ```
 
-Posteriormente en el archivo que captura la informacion del formulario, valide que los campos $captcha_random y $captcha_digitado sean iguales.
+Posteriormente en el archivo que captura la informacion del formulario (en el ejemplo anterior era validar.php), valide que los campos $captcha_random y $captcha_digitado sean iguales.
 
 Ejemplo:
 
@@ -42,7 +42,7 @@ $captcha_random=$_POST["captcha_random"];
 $captcha_digitado=$_POST["captcha_digitado"];
 
 if($captcha_random==$captcha_digitado){
-    echo("Captcha corresponde");
+    // Realizar operación correspondiente si el captcha es correcto
 }else{
     echo("El captcha no corresponde");
 }
