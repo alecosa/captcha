@@ -14,7 +14,7 @@ $captcha_digitado=$_POST["captcha_digitado"];
 if($captcha_random==$captcha_digitado){
     echo("Captcha corresponde");
 }else{
-    echo("Captcha no corresponde");
+    echo("El captcha no corresponde");
 }
 ?>
 ```
