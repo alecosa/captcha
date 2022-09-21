@@ -19,9 +19,9 @@ echo("
         <form method='POST' action='validar.php'>
         <table border=0 width='100%'>
         <tr>
-        ");
-        include('captcha.php');
-        echo("
+");
+include('captcha.php');
+echo("
         <tr>
         <td><button>Validar</button>
         </table>
