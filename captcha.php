@@ -8,11 +8,11 @@ Captcha alfanumérico de 6 dígitos
 */
 
 // Generar captcha
-$captcha_box="0ab1cd2ef3gh4ij5kl6mn7op8qr9st.uv-wx+yz*";
+$captcha_box="0ab1cd2ef.3gh4ij-5kl6mn7op+8qr9st*uvwxyz#";
 $nuevo=array();
 
 for($x=1;$x<=6;$x++){
-    $aleatorio=rand(0, 39);
+    $aleatorio=rand(0, 40);
     $componente_captcha=substr($captcha_box, $aleatorio, 1);
     $nuevo[]=$componente_captcha;
 }
@@ -32,7 +32,7 @@ function no_pegar() {
 }
 </script>
 <input type=hidden id='captcha_random' name='captcha_random' value='".$captcha_final."'>
-<input type=text id='captcha' name='captcha' value='".$captcha_final."' style='text-align:center; border: 0; width:110px; font-weight: bold; font-size: 20px; color:328bd7; background: transparent;' disabled>
+<input type=text id='captcha' name='captcha' value='".$captcha_final."' style='text-align:center; border:0; width:110px; font-weight:bold; font-size:20px; color:328bd7; background:transparent;' disabled>
 <input type='text' id='captcha_digitado' name='captcha_digitado' placeholder='captcha' maxlength='6' style='text-align:center; width:72px;' onfocus='no_pegar();'>
 ");
 ?>
