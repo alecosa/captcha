@@ -25,8 +25,8 @@ echo("
 Función en javascript que impide pegar texto en el input donde el usuario debe digitar el captcha
 */
 function no_pegar() {
-    var input = document.getElementById('captcha_digitado');
-    input.onpaste = function(e) {
+    var inputCaptcha = document.getElementById('captcha_digitado');
+    inputCaptcha.onpaste = function(e) {
       e.preventDefault();
       return false;
     }
