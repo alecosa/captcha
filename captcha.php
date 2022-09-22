@@ -28,7 +28,7 @@ $(document).ready(function(){
 });
 </script>
 <input type=hidden id='captcha_random' name='captcha_random' value='".$captcha_final."'>
-<input type=text id='captcha' name='captcha' value='".$captcha_final."' style='text-align:center; border: 0; width:70px;' disabled>
-<input type='text' id='captcha_digitado' name='captcha_digitado' placeholder='captcha' maxlength='6' style='text-align:center; width:70px;'>
+<input type=text id='captcha' name='captcha' value='".$captcha_final."' style='text-align:center; border: 0; width:75px; font-weight: bold;' disabled>
+<input type='text' id='captcha_digitado' name='captcha_digitado' placeholder='captcha' maxlength='6' style='text-align:center; width:72px;'>
 ");
 ?>
