@@ -15,6 +15,8 @@ for($x=1;$x<=6;$x++){
     $nuevo[]=$componente_captcha;
 }
 
+$captcha_final=implode($nuevo);
+
 // Jquery es utilizado con el fin de deshabilitar la opción de pegar en el input que recibe el captcha
 echo("
 <script src='https://code.jquery.com/jquery-3.6.1.min.js'></script>
@@ -25,8 +27,8 @@ $(document).ready(function(){
     });
 });
 </script>
-<input type=hidden id='captcha_random' name='captcha_random' value='".implode($nuevo)."'>
-<input type=text id='captcha' name='captcha' value='".implode($nuevo)."' style='text-align:center;' disabled>
+<input type=hidden id='captcha_random' name='captcha_random' value='".$captcha_final."'>
+<input type=text id='captcha' name='captcha' value='".$captcha_final."' style='text-align:center;' disabled>
 <input type='text' id='captcha_digitado' name='captcha_digitado' placeholder='captcha' maxlength='6' style='text-align:center;'>
 ");
 ?>
