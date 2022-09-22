@@ -32,7 +32,7 @@ function no_pegar() {
 }
 </script>
 <input type=hidden id='captcha_random' name='captcha_random' value='".$captcha_final."'>
-<input type=text id='captcha' name='captcha' value='".$captcha_final."' style='text-align:center; border: 0; width:100px; font-weight: bold; font-size: 18px;' disabled>
+<input type=text id='captcha' name='captcha' value='".$captcha_final."' style='text-align:center; border: 0; width:110px; font-weight: bold; font-size: 20px; color:328bd7; background: transparent;' disabled>
 <input type='text' id='captcha_digitado' name='captcha_digitado' placeholder='captcha' maxlength='6' style='text-align:center; width:72px;' onfocus='no_pegar();'>
 ");
 ?>
