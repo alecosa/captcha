@@ -32,7 +32,7 @@ echo("
 ?>
 ```
 
-Posteriormente en el archivo que captura la información del formulario (en el ejemplo anterior era validar.php), valide que los campos $captcha_random y $captcha_digitado sean iguales.
+Posteriormente en el archivo que captura la información del formulario (en el ejemplo anterior es validar.php), valide que los campos $captcha_random y $captcha_digitado sean iguales.
 
 Ejemplo:
 
