@@ -1,8 +1,11 @@
 <?PHP
 /*
+copyright © 2022 parablan - Hector Alejandro Parada Blanco
+
 Powered by parablan
-Hector Alejandro Parada Blanco
-Captcha alfanumérico de 6 dígitos
+
+Captcha alfanumerico de 6 dígitos
+
 */
 
 // Generar captcha
@@ -17,18 +20,18 @@ for($x=1;$x<=6;$x++){
 
 $captcha_final=implode($nuevo);
 
-// Jquery es utilizado con el fin de deshabilitar la opción de pegar en el input que recibe el captcha
 echo("
-<script src='https://code.jquery.com/jquery-3.6.1.min.js'></script>
 <script>
-$(document).ready(function(){
-    $('#captcha_digitado').on('paste',function(e) {
-       e.preventDefault();
-    });
-});
+function no_pegar() {
+    var myInput = document.getElementById('captcha_digitado');
+    myInput.onpaste = function(e) {
+      e.preventDefault();
+      return false;
+    }
+}
 </script>
 <input type=hidden id='captcha_random' name='captcha_random' value='".$captcha_final."'>
 <input type=text id='captcha' name='captcha' value='".$captcha_final."' style='text-align:center; border: 0; width:75px; font-weight: bold;' disabled>
-<input type='text' id='captcha_digitado' name='captcha_digitado' placeholder='captcha' maxlength='6' style='text-align:center; width:72px;'>
+<input type='text' id='captcha_digitado' name='captcha_digitado' placeholder='captcha' maxlength='6' style='text-align:center; width:72px;' onfocus='no_pegar();'>
 ");
 ?>
