@@ -28,7 +28,6 @@ function no_pegar() {
     var inputCaptcha = document.getElementById('captcha_digitado');
     inputCaptcha.onpaste = function(e) {
       e.preventDefault();
-      return false;
     }
 }
 </script>
