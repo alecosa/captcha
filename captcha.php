@@ -21,9 +21,12 @@ $captcha_final=implode($nuevo);
 
 echo("
 <script>
+/*
+Función en javascript que impide pegar texto en el input donde el usuario debe digitar el captcha
+*/
 function no_pegar() {
-    var myInput = document.getElementById('captcha_digitado');
-    myInput.onpaste = function(e) {
+    var input = document.getElementById('captcha_digitado');
+    input.onpaste = function(e) {
       e.preventDefault();
       return false;
     }
