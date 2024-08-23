@@ -31,8 +31,11 @@ function no_pegar() {
     }
 }
 </script>
+<td align='center'>
 <input type=hidden id='captcha_random' name='captcha_random' value='".$captcha_final."'>
-<input type=text id='captcha' name='captcha' value='".$captcha_final."' style='text-align:center; border:0; width:110px; font-weight:bold; font-size:20px; color:328bd7; background:transparent;' disabled>
-<input type='text' id='captcha_digitado' name='captcha_digitado' placeholder='captcha' maxlength='6' style='text-align:center; width:72px;' onfocus='no_pegar();'>
+<input type=text id='captcha' name='captcha' value='".$captcha_final."' style='text-align:center; border:0; width:110px; font-weight:bold; font-size:20px; color:328bd7; background:transparent; letter-spacing: 3px' disabled>
+<tr>
+<td align='center'>
+<input type='text' id='captcha_digitado' name='captcha_digitado' placeholder='captcha' maxlength='6' style='text-align:center; width:90px; letter-spacing: 3px' onfocus='no_pegar();'>
 ");
 ?>
